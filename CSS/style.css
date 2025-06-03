@@ -1,11 +1,51 @@
 :root {
     --bg-black: #1c1c1c;
-    --color-blue: #2196f3;
     --color-gray: #3f3f3f;
     --color-white: white;
     --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
     --color-darknes-gray: #666666;
     --color-red: rgb(255, 0, 0);
+}
+
+.modo-escuro { 
+    --bg-black: #1c1c1c;
+    --color-gray: #3f3f3f;
+    --color-white: white;
+    --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    --color-darknes-gray: #666666;
+    --color-red: rgb(255, 0, 0);
+    .hero {
+        font-size: 10rem;
+        color: var(--color-red);
+    }
+    .hero p{
+        font-size: 3rem;
+        color: var(--color-white);
+    }
+}
+
+.modo-claro {
+    --bg-black: #ffffff;
+    --color-gray: #b3b3b3;
+    --color-white: #485a69;
+    --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    --color-darknes-gray: #1a84db;
+    --color-red: #2196f3;
+    
+    .header-page h1 {
+        color: var(--bg-black);
+    }
+    .bg-image{
+        background-image: url(../img/landing1.jpg);
+    }
+    .hero{
+        font-size: 10rem;
+        color: var(--color-red);
+    }
+    .hero p{
+        font-size: 3rem;
+        color: var(--bg-black);
+    }
 }
 
 * {
@@ -46,6 +86,30 @@ a {
 
 a:hover {
     color: var(--color-red);
+}
+
+#trocar-tema {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--bg-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#trocar-tema svg {
+    fill: var(--color-red);
+}
+#trocar-tema svg:last-child{
+    display: none;
+}
+
+.modo-claro #trocar-tema svg:first-child{
+    display: none;
+}
+.modo-claro #trocar-tema svg:last-child{
+    display: block;
 }
 
 .secao1 {
