@@ -1,210 +1,276 @@
 :root {
-    --bg-black: #1c1c1c;
-    --color-blue: #2196f3;
-    --color-gray: #3f3f3f;
-    --color-white: white;
-    --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
-    --color-darknes-gray: #666666;
-    --color-red: rgb(255, 0, 0);
+  --bg-black: #1c1c1c;
+  --color-blue: #2196f3;
+  --color-gray: #3f3f3f;
+  --color-white: white;
+  --bg-gradient: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3)
+  );
+  --color-darkness-gray: #666666;
+  --color-red: rgb(255, 0, 0);
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-    font-family: 'Teko', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Teko", sans-serif;
 }
 
 body {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 h1 span {
-    color: var(--color-red);
+  color: var(--color-red);
 }
 
 h1,
 h2 {
-    font-weight: 400;
-    text-transform: uppercase;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: var(--color-white);
-    transition: color 0.7s;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: color 0.7s;
 }
 
 a:hover {
-    color: var(--color-red);
+  color: var(--color-red);
 }
 
 .secao1 {
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
 }
 
 .bg-black {
-    background-color: var(--bg-black);
+  background-color: var(--bg-black);
 }
 
 .bg-gray {
-    background-color: var(--color-gray);
+  background-color: var(--color-gray);
 }
 
 .bg-image {
-    background-image: var(--bg-gradient), url(../img/landing2.png);
+  background-image: var(--bg-gradient), url(../img/landing2.png);
 }
 
 .header-page {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 3rem;
-    color: var(--color-white);
-    font-size: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  color: var(--color-white);
+  font-size: 2.5rem;
 }
 
 .header-menu ul {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .hero {
-    min-height: calc(100vh - 10rem);
-    display: flex;
-    flex-direction: column;
-    color: var(--color-white);
-    align-items: center;
-    justify-content: center;
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white);
+  align-items: center;
+  justify-content: center;
 }
 
 .hero p {
-    font-size: 2rem;
-    max-width: 30%;
-    text-align: center;
+  font-size: 2rem;
+  max-width: 30%;
+  text-align: center;
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    font-size: 2.7rem;
-    margin-top: 2rem;
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--color-red);
-    color: var(--color-white);
-    cursor: pointer;
-    transition: background-color 0.3s;
+  font-size: 2.7rem;
+  margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-
 .btn:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .tela-linha {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 90%;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 2rem;
 }
 
 .texto-lado {
-    flex: 1;
-    color: var(--color-white);
-    font-size: 2rem;
+  flex: 1;
+  color: var(--color-white);
+  font-size: 2rem;
 }
 
 .texto-lado h3 {
-    font-weight: 500;
-    font-size: 2.8rem;
-    color: var(--color-red);
-    margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: var(--color-red);
+  margin-bottom: 1rem;
 }
 
 .texto-lado p {
-    width: 70%;
-    font-size: 2.3rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+  width: 70%;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .imagem-lado {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .foto {
-    width: 70%;
-    max-width: 500px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid var(--color-darknes-gray);
+  width: 70%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-darkness-gray);
 }
 
 .voltaraotopo {
-    transition: all 0.25s ease-in-out;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: inline-flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    margin: 0 3em 3em 0;
-    border-radius: 50%;
-    padding: 0.25rem;
-    width: 3rem;
-    height: 4rem;
-    background-color: black;
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: 0.25rem;
+  width: 3rem;
+  height: 4rem;
+  background-color: black;
 }
 
+.slideshow-container {
+  position: relative;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  height: 900px;
+}
+
+.mySlides {
+  width: 90%;
+  max-width: 800px;
+  height: 90%;
+  border: 4px solid #2196f3;
+  border-radius: 10px;
+  display: none;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.nav-button:hover {
+  background-color: rgba(33, 150, 243, 0.8);
+}
+
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+  right: 20px;
+}
+
+
+
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background: var(--bg-black);
-    color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--bg-black);
+  color: var(--color-white);
 }
 
 footer h4 {
-    font-size: 2rem;
-    font-weight: 200;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 footer span {
-    color: var(--color-red);
+  color: var(--color-red);
 }
