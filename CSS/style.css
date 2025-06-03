@@ -49,12 +49,12 @@
 }
 
 .modo-azul {
-    --bg-black: #071f61;
+    --bg-black: #3b556e;
     --color-gray: #0f3764;
-    --color-white: #7f8283;
+    --color-white: #ffffff;
     --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
     --color-darknes-gray: #ecf0f3;
-    --color-red: #0d09f19f;
+    --color-red: #0704d3d0;
     
     .header-page h1 {
         color: var(--color-darknes-gray);
@@ -71,6 +71,7 @@
         color: var(--bg-black);
     }
 }
+
 
 * {
     margin: 0;
@@ -112,7 +113,19 @@ a:hover {
     color: var(--color-red);
 }
 
-#trocar-tema {
+#temas {
+    display: flex;
+    flex-direction: row;
+    gap: 1.7rem;
+}
+#temas button.ativo svg {
+    display: none; 
+}
+#temas button svg {
+    display: inline-block;
+}
+
+#tema-claro {
     height: 50px;
     width: 50px;
     padding: 0;
@@ -123,21 +136,11 @@ a:hover {
     align-items: center;
     border: none;
 }
-#trocar-tema svg {
-    fill: var(--color-red);
-}
-#trocar-tema svg:last-child{
-    display: none;
+#tema-claro svg {
+    fill: rgb(196, 193, 193);
 }
 
-.modo-claro #trocar-tema svg:first-child{
-    display: none;
-}
-.modo-claro #trocar-tema svg:last-child{
-    display: block;
-}
-
-#trocar-tema1 {
+#tema-escuro {
 height: 50px;
     width: 50px;
     padding: 0;
@@ -148,21 +151,11 @@ height: 50px;
     align-items: center;
     border: none;
 }
-#trocar-tema1 svg {
-    fill: var(--color-red);
-}
-#trocar-tema1 svg:last-child{
-    display: none;
+#tema-escuro svg {
+    fill: black;
 }
 
-.modo-escuro #trocar-tema1 svg:first-child{
-    display: none;
-}
-.modo-escuro #trocar-tema1 svg:last-child{
-    display: block;
-}
-
-#trocar-tema2 {
+#tema-azul {
     height: 50px;
     width: 50px;
     padding: 0;
@@ -173,15 +166,8 @@ height: 50px;
     align-items: center;
     border: none;
 }
-#trocar-tema2 svg {
-    fill: var(--color-red);
-}
-#trocar-tema2 svg:last-child{
-    display: none;
-}
-
-.modo-azul #trocar-tema2 svg:last-child{
-    display: block;
+#tema-azul svg {
+    fill: rgba(14, 79, 219, 0.945);
 }
 
 
