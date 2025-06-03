@@ -7,172 +7,151 @@
   <title>HidroFlow</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Inter&family=Nunito&family=Teko&display=swap"
-  rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Inter&family=Nunito&family=Teko&display=swap" rel="stylesheet" />
   <link rel="icon" href="./img/icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="./css/style.css" />
   <script src="slideShow.js" defer></script>
 </head>
 
 <body>
-  <section class="secao1 bg-image" id="telah">
-    <header class="header-page">
-      <h1>Company <span>404</span></h1>
-      <nav class="header-menu">
-        <ul>
-          <li><a href="#tela1">Soluções</a></li>
-          <li><a href="#tela2">Tecnologias</a></li>
-          <li><a href="#tela3">Objetivos</a></li>
-          <li><a href="#tela4">Impactos</a></li>
-          <li><a href="#tela5">Benefícios</a></li>
-          <li><a href="#tela6">Como Ajudar</a></li>
-        </ul>
-      </nav>
-    </header>
+    <section class="secao1 bg-image" id="telah">
+        <header class="header-page">
+            <h1>Company <span>404</span></h1>
+            <nav class="header-menu">
+                <ul>
+                    <button id="trocar-tema">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                    </button>
+                    <li><a href="#tela1">Soluções</a></li>
+                    <li><a href="#tela2">Tecnologias</a></li>
+                    <li><a href="#tela3">Objetivos</a></li>
+                    <li><a href="#tela4">Impactos</a></li>
+                    <li><a href="#tela5">Benefícios</a></li>
+                    <li><a href="#tela6">Como Ajudar</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="hero">
-      <h1>HidroFlow</h1>
-      <p>Em busca de uma socidade mais segura.</p>
-      <a class="btn" href="https://github.com/Lucasvssz/Gs-Edge" target="_blank">Saiba Mais</a>
-    </div>
+        <div class="hero">
+            <h1>HidroFlow</h1>
+            <p>Em busca de uma socidade mais segura.</p>
+            <a class="btn" href="https://github.com/Lucasvssz/Gs-Edge" target="_blank">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Seções -->
+    <section class="container bg-black" id="tela1">
+        <div class="tela-linha">
+            <div class="texto-lado">
+                <h3>O que enfrentamos?</h3>
+                <p>Combatemos alagamentos urbanos, causados pelo acúmulo de água, lixo e obstruções que impedem o
+                    escoamento adequado nos bueiros.</p>
+
+                <h3>Nossa intervenção</h3>
+                <p>Enfrentaremos o problema com monitoramento em tempo real, alertas preventivos e ações rápidas para
+                    mitigar danos causados por enchentes urbanas.</p>
+            </div>
+            <div class="imagem-lado">
+                <img class="foto" src="./img/tela-1-esquerda.jpg" alt="Bueiro obstruido com lixo e folhas." />
+                <img class="foto" src="./img/tela-1-direita.jpg" alt="Cidadão tentando evitar rua alagada" />
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-gray" id="tela2">
+        <div class="tela-linha">
+            <div class="texto-lado">
+                <h3>Tecnologias Usadas</h3>
+                <p>Nosso sistema utiliza Arduíno como base para suas dependências, além de contarmos com Sensores
+                    Ultrassônicos programados em C/C++.</p>
+
+                <h3>HidroFlow V.1</h3>
+                <p>Além dos sensores, integramos um sistema de tela e alerta composto por LEDs, um buzzer e um display
+                    LCD.</p>
+            </div>
+            <div class="imagem-lado">
+                <img class="foto" src="./img/tela-2-esquerda.png" alt="Sistema do nosso projeto." />
+                <img class="foto" src="./img/tela-2-direita.png" alt="Primeira versão do nosso projeto" />
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-black" id="tela3">
+        <div class="tela-linha">
+            <div class="texto-lado">
+                <h3>Objetivos que alcançaremos</h3>
+                <p>Visamos futuramente integrar nosso sistema diretamente com o sistema de emergência brasileiro, para
+                    alcançar maior eficiência.</p>
+
+                <h3>Confiabilidade e Viabilidade</h3>
+                <p>Focamos também em desenvolver um sistema eficiente, confiável e com custo acessível para melhorar a
+                    gestão urbana e evitar desastres.</p>
+            </div>
+            <div class="imagem-lado">
+                <img class="foto" src="./img/tela-3-esquerda.webp" alt="Pessoas no bote do corpo de bombeiros." />
+                <img class="foto" src="./img/tela-3-direita.avif" alt="Bombeiro fazendo carinho em cachorro" />
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-gray" id="tela4">
+        <div class="tela-linha">
+            <div class="texto-lado">
+                <h3>Público Alvo</h3>
+                <p>Temos como objetivo alcançar as comunidades mais vulneráveis, que convivem frequentemente com os
+                    impactos causados pelas enchentes.</p>
+
+                <h3>Nosso Propósito</h3>
+                <p>Queremos mitigar cada vez mais os danos que essas comunidades sofrem. Prover segurança e acolhimento
+                    a elas é nosso dever.</p>
+            </div>
+            <div class="imagem-lado">
+                <img class="foto" src="./img/tela-4-esquerda.webp" alt="Mãe e filha em rua algada." />
+                <img class="foto" src="./img/tela-4-direta.jpg" alt="Carros que foram arrastados por alagamento" />
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-black" id="tela5">
+        <div class="tela-linha">
+            <div class="texto-lado">
+                <h3>Conte conosco</h3>
+                <p>Nosso sistema previne enchentes, reduz danos materiais, salva vidas e melhora a eficiência das
+                    equipes de manutenção e fiscalização urbana.</p>
+
+                <h3>Não seja pego de surpresa</h3>
+                <p>O sistema também possibilita o acompanhamento da intensidade da chuva e contribui para previsão de
+                    possíveis imprevistos.</p>
+            </div>
+            <div class="imagem-lado">
+                <img class="foto" src="./img/tela-5-esquerda.png"
+                    alt="Pessoas atravessando faixa de pedestre na chuva" />
+                <img class="foto" src="./img/tela-5-direita.webp"
+                    alt="Pessoas atravessando faixa de pedestre na chuva" />
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-gray" id="tela6">
+        <div class="tela-linha">
+            <div class="texto-lado">
+                <h3>Sempre ao seu lado</h3>
+                <p>Não estaremos apenas no quesito segurança, mas também quando se trata de mobilidade e infraestrutura,
+                    estaremos ao seu serviço.</p>
+
+                <h3>Se prevenir nunca foi tão fácil</h3>
+                <p>Usuários terão acesso a informações em tempo real sobre riscos, promovendo maior segurança,
+                    planejamento e prevenção em áreas vulneráveis.</p>
+            </div>
+            <div class="imagem-lado">
+                <img class="foto" src="./img/tela-6-esquerda.webp" alt="Técnicos arrumando um bueiro." />
+                <img class="foto" src="./img/tela-6-direita.webp" alt="Homem e mulher atravessando trecho alagado" />
+            </div>
+        </div>
+    </section>
   </section>
-
-  <!-- Seções -->
-  <section class="container bg-black" id="tela1">
-    <div class="tela-linha">
-      <div class="texto-lado">
-        <h3>O que enfrentamos?</h3>
-        <p>
-          Combatemos alagamentos urbanos, causados pelo acúmulo de água, lixo
-          e obstruções que impedem o escoamento adequado nos bueiros.
-        </p>
-
-        <h3>Nossa intervenção</h3>
-        <p>
-          Enfrentaremos o problema com monitoramento em tempo real, alertas
-          preventivos e ações rápidas para mitigar danos causados por
-          enchentes urbanas.
-        </p>
-      </div>
-      <div class="imagem-lado">
-        <img class="foto" src="./img/tela-1-esquerda.jpg" alt="Bueiros entupidos com folhas e outros lixos." />
-        <img class="foto" src="./img/tela-1-direita.jpg" alt="Cidadão tentando evitar rua alagada" />
-      </div>
-    </div>
-  </section>
-
-  <section class="container bg-gray" id="tela2">
-    <div class="tela-linha">
-      <div class="texto-lado">
-        <h3>Tecnologias Usadas</h3>
-        <p>
-          Nosso sistema utiliza Arduíno como base para suas dependências, além
-          de contarmos com Sensores Ultrassônicos programados em C/C++.
-        </p>
-
-        <h3>HidroFlow V.1</h3>
-        <p>
-          Além dos sensores, integramos um sistema de tela e alerta composto
-          por LEDs, um buzzer e um display LCD.
-        </p>
-      </div>
-      <div class="imagem-lado">
-        <img class="foto" src="./img/tela-2-esquerda.png" alt="Sistema do
-          nosso projeto." />
-        <img class="foto" src="./img/tela-2-direita.png" alt="Primeira versão do nosso projeto" />
-      </div>
-    </div>
-  </section>
-
-  <section class="container bg-black" id="tela3">
-    <div class="tela-linha">
-      <div class="texto-lado">
-        <h3>Objetivos que alcançaremos</h3>
-        <p>
-          Visamos futuramente integrar nosso sistema diretamente com o sistema
-          de emergência brasileiro, para alcançar maior eficiência.
-        </p>
-
-        <h3>Confiabilidade e Viabilidade</h3>
-        <p>
-          Focamos também em desenvolver um sistema eficiente, confiável e com
-          custo acessível para melhorar a gestão urbana e evitar desastres.
-        </p>
-      </div>
-      <div class="imagem-lado">
-        <img class="foto" src="./img/tela-3-esquerda.webp" alt="Pessoas no bote do corpo de bombeiros." />
-        <img class="foto" src="./img/tela-3-direita.avif" alt="Bombeiro fazendo carinho em cachorro" />
-      </div>
-    </div>
-  </section>
-
-  <section class="container bg-gray" id="tela4">
-    <div class="tela-linha">
-      <div class="texto-lado">
-        <h3>Público Alvo</h3>
-        <p>
-          Temos como objetivo alcançar as comunidades mais vulneráveis, que
-          convivem frequentemente com os impactos causados pelas enchentes.
-        </p>
-
-        <h3>Nosso Propósito</h3>
-        <p>
-          Queremos mitigar cada vez mais os danos que essas comunidades
-          sofrem. Prover segurança e acolhimento a elas é nosso dever.
-        </p>
-      </div>
-      <div class="imagem-lado">
-        <img class="foto" src="./img/tela-4-esquerda.webp" alt="Mãe e filha em rua algada." />
-        <img class="foto" src="./img/tela-4-direta.jpg" alt="Carros que foram arrastados por alagamento" />
-      </div>
-    </div>
-  </section>
-
-  <section class="container bg-black" id="tela5">
-    <div class="tela-linha">
-      <div class="texto-lado">
-        <h3>Conte conosco</h3>
-        <p>
-          Nosso sistema previne enchentes, reduz danos materiais, salva vidas
-          e melhora a eficiência das equipes de manutenção e fiscalização
-          urbana.
-        </p>
-
-        <h3>Não seja pego de surpresa</h3>
-        <p>
-          O sistema também possibilita o acompanhamento da intensidade da
-          chuva e contribui para previsão de possíveis imprevistos.
-        </p>
-      </div>
-      <div class="imagem-lado">
-        <img class="foto" src="./img/tela-5-esquerda.png" alt="Técnicos arrumando um bueiro." />
-        <img class="foto" src="./img/tela-5-direita.webp" alt="Pessoas atravessando faixa de pedestre na chuva" />
-      </div>
-    </div>
-  </section>
-
-  <section class="container bg-gray" id="tela6">
-    <div class="tela-linha">
-      <div class="texto-lado">
-        <h3>Sempre ao seu lado</h3>
-        <p>
-          Não estaremos apenas no quesito segurança, mas também quando se
-          trata de mobilidade e infraestrutura, estaremos ao seu serviço.
-        </p>
-
-        <h3>Se prevenir nunca foi tão fácil</h3>
-        <p>
-          Usuários terão acesso a informações em tempo real sobre riscos,
-          promovendo maior segurança, planejamento e prevenção em áreas
-          vulneráveis.
-        </p>
-      </div>
-      <div class="imagem-lado">
-        <img class="foto" src="./img/tela-6-esquerda.webp" alt="Pessoas atravessando faixa de pedestre na chuva" />
-        <img class="foto" src="./img/tela-6-direita.webp" alt="Homem e mulher atravessando trecho alagado" />
-      </div>
-    </div>
-  </section>
+  
   <section class="tela-slide" id="tela7">
     <h2>Slide show</h2>
     <div class="slideshow-container">
@@ -187,10 +166,11 @@
     </div>
   </section>
 
-  <footer>
-    <h4>© 2025 <span>Company 404</span>. Todos os direitos reservados</h4>
-  </footer>
+    <a class="voltaraotopo hide" href="#" id="js-top">.</a>
 
   </div>
-
+    <footer>
+        <h4>© 2025 <span>Company 404</span>. Todos os direitos reservados</h4>
+    </footer>
+</body>
 </html>
