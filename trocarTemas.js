@@ -1,4 +1,4 @@
-let temaAtual = localStorage.getItem('tema')
+/*let temaAtual = localStorage.getItem('tema')
 const trocarTema = document.getElementById('trocar-tema')
 
 const habilitarModoClaro = () => {
@@ -27,3 +27,4 @@ trocarTema.addEventListener("click", () => {
         habilitarModoClaro()
     }
 })
+*/
