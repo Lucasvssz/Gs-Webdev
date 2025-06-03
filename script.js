@@ -11,7 +11,7 @@ function showDivsAuto() {
   if (slideIndex > slides.length) { slideIndex = 1 }
 
   slides[slideIndex - 1].style.display = "block";
-  timer = setTimeout(showDivsAuto, 4000); // troca a cada 4 segundos
+  timer = setTimeout(showDivsAuto, 3000); // troca a cada 4 segundos
 }
 
 function plusDivs(n) {
