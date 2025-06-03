@@ -48,6 +48,31 @@
     }
 }
 
+.modo-azul {
+    --bg-black: #3b556e;
+    --color-gray: #0f3764;
+    --color-white: #ffffff;
+    --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    --color-darknes-gray: #ecf0f3;
+    --color-red: #0704d3d0;
+    
+    .header-page h1 {
+        color: var(--color-darknes-gray);
+    }
+    .bg-image{
+        background-image: url(../img/landing3.webp);
+    }
+    .hero{
+        font-size: 10rem;
+        color: var(--color-red);
+    }
+    .hero p{
+        font-size: 3rem;
+        color: var(--bg-black);
+    }
+}
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -88,7 +113,19 @@ a:hover {
   color: var(--color-red);
 }
 
-#trocar-tema {
+#temas {
+    display: flex;
+    flex-direction: row;
+    gap: 1.7rem;
+}
+#temas button.ativo svg {
+    display: none; 
+}
+#temas button svg {
+    display: inline-block;
+}
+
+#tema-claro {
     height: 50px;
     width: 50px;
     padding: 0;
@@ -97,20 +134,42 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
 }
-#trocar-tema svg {
-    fill: var(--color-red);
-}
-#trocar-tema svg:last-child{
-    display: none;
+#tema-claro svg {
+    fill: rgb(196, 193, 193);
 }
 
-.modo-claro #trocar-tema svg:first-child{
-    display: none;
+#tema-escuro {
+height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--bg-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
-.modo-claro #trocar-tema svg:last-child{
-    display: block;
+#tema-escuro svg {
+    fill: black;
 }
+
+#tema-azul {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--bg-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+#tema-azul svg {
+    fill: rgba(14, 79, 219, 0.945);
+}
+
 
 .secao1 {
   width: 100%;
