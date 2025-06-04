@@ -78,7 +78,8 @@ h1 span {
     color: var(--color-red);
 }
 
-h1 {
+h1,
+h2 {
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -133,11 +134,24 @@ a:hover {
     background-position: center;
 }
 
-
-
 .bg-image {
     background-image: var(--bg-gradient), url(../img/landing2.png);
 }
+
+.header-page {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+
+.header-menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
 
 .header-quiz {
     width: 80%;
@@ -172,7 +186,7 @@ a:hover {
     border-radius: 8px;
 }
 
-.container-questions-quiz{
+.container-questions-quiz {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -181,47 +195,48 @@ a:hover {
     gap: 20px;
 }
 
-.question{
+.question {
     font-size: 3rem;
     text-align: center;
 }
 
-.answers-container{
+.answers-container {
     width: 50%;
     display: grid;
     gap: 2rem;
 }
 
-.next-question{
+.next-question {
     margin-top: 2rem;
 }
 
-.button{
+.button {
     font-family: teko;
     background-color: var(--bg-black);
     color: var(--color-white);
-    font-size: clamp( 1.4rem, 2vw, 2.4rem); ;
+    font-size: clamp(1.4rem, 2vw, 2.4rem);
+    ;
     border: 0;
     border: 2px solid var(--bg-black);
     border-radius: 8px;
     height: 40px;
-    transition: filter 0.2s ;
+    transition: filter 0.2s;
 }
 
-.button:not(:disabled):hover{
+.button:not(:disabled):hover {
     filter: brightness(0.8);
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.final-message{
+.final-message {
     font-size: 3rem;
     text-align: center;
 }
 
-.final-message span{
+.final-message span {
     display: block;
     margin-top: 1rem;
 }
@@ -236,17 +251,15 @@ footer {
 }
 
 
-.correct{
-    background-color: green ;
+.correct {
+    background-color: green;
 }
 
-.incorrect{
+.incorrect {
     background-color: #a10101;
 }
 
-.answer:disabled{
-    
-}
+.answer:disabled {}
 
 footer h4 {
     font-size: 2rem;
