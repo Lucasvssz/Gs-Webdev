@@ -12,7 +12,7 @@
     <link rel="icon" href="./img/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./CSS/quiz.css" />
     <script type="text/javascript" src="trocarTemas.js" defer></script>
-    <script type="module" src="quiz.js"></script> <!-- ✅ Corrigido para módulo -->
+    <script type="module" src="quiz.js"></script> 
 </head>
 
 <body>
@@ -34,24 +34,26 @@
                 </svg>
             </button>
         </header>
-
-        <section class="espaco-quiz">
-            <header class="header-quiz">
-                <h2>quiz</h2>
-            </header>
-            <div class="card">
-                <span class="spnQtd"></span>
-                <span class="question"></span>
-                <div class="resposta"></div>
-
-                <div class="finalizar" style="display: none;"> <!-- ✅ Sugiro ocultar inicialmente -->
-                    <span></span>
-                    <button class="btn">Reiniciar</button>
+        <header class="header-quiz">
+            <h2>quiz</h2>
+        </header>
+        <div class="container-quiz">
+            <div class="container-questions-quiz hide">
+                <span class="question">Pergunta aqui</span>
+                <div class="answers-container">
+                    <button class="answer button">Resposta 1</button>
+                    <button class="answer button">Resposta 2</button>
+                    <button class="answer button">Resposta 3</button>
+                    <button class="answer button">Resposta 4</button>
                 </div>
             </div>
-        </section>
-    </section>
+            <div class="controls-container">
+                <button class="start-quiz button">Começar Quiz</button>
+                <button class="next-question button hide">Próxima pergunta</button>
+            </div>
+        </div>
 
+    </section>
     <footer>
         <h4>© 2025 <span>Company 404</span>. Todos os direitos reservados</h4>
     </footer>
