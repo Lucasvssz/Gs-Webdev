@@ -15,7 +15,7 @@
   --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
   --color-darknes-gray: #666666;
   --color-red: rgb(255, 0, 0);
-  --color-white2: #3f3f3f;
+  --color-white2: #ffff;
 
   .hero {
     font-size: 10rem;
@@ -65,7 +65,7 @@
   --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
   --color-darknes-gray: #ecf0f3;
   --color-red: #0704d3d0;
-  --color-white2: #0f3764;
+    --color-white2: #3b556e;
 
   .header-page h1 {
     color: var(--color-darknes-gray);
@@ -100,6 +100,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 h1 span {
@@ -129,17 +130,18 @@ a:hover {
 
 #temas {
   display: flex;
-  flex-direction: row;
-  gap: 1.7rem;
+  align-items: center;
+  gap: 24px;
 }
 
 #temas button.ativo svg {
   display: none;
 }
-
-#temas button svg {
-  display: inline-block;
+#temas button {
+    display: inline-block;
+    cursor: pointer;
 }
+
 
 #tema-claro {
   height: 50px;
@@ -151,6 +153,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   border: none;
+  cursor: pointer;
 }
 
 #tema-claro svg {
@@ -167,6 +170,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   border: none;
+  cursor: pointer;
 }
 
 #tema-escuro svg {
@@ -183,6 +187,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   border: none;
+  cursor: pointer;
 }
 
 #tema-azul svg {
@@ -196,7 +201,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+}  
 
 .container {
   width: 100%;
@@ -219,7 +224,7 @@ a:hover {
   background-image: var(--bg-gradient), url(../img/landing2.png);
 }
 
-.header-page {
+.header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -228,18 +233,127 @@ a:hover {
   font-size: 3rem;
 }
 
-.header-menu ul {
+.nav {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu-mobile {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+} 
+
+.nav-list a {
+  font-size: 2.9rem;
+  padding-block: 16px;
+}
+
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.hamburguer span {
+  height: 3px;
+  width: 30px;
+  background: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+
+.hamburguer.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+.hamburguer.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburguer.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -10px);
+}
+
+@media (max-width: 1300px) {
+  .menu-mobile {
+    max-width: 90vw;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    top: 80px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .menu-mobile.active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hamburguer {
+    display: flex;
+  }
+
+  .nav {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .logo {
+    margin: 0 auto;
+    font-size: 3.7rem; /* opcional: diminuir no mobile */
+  }
+
+  .hero h1 {
+    font-size: 10rem !important;
+  }
+
+  .hero p {
+    max-width: 90% !important;
+  }
+
+  .voltaraotopo {
+    margin: 0 1em 1em 0 !important;
+  }
 }
 
 .hero {
   min-height: calc(100vh - 10rem);
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   color: var(--color-white);
   align-items: center;
   justify-content: center;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 15rem;
 }
 
 .hero p {
@@ -499,20 +613,16 @@ a:hover {
   right: 20px;
 }
 
-
-
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: var(--color-white2);
-  color: var(--color-white);
+  background: var(--color-gray);
 }
 
 footer h4 {
-  color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 200;
 }
 
