@@ -7,6 +7,7 @@
             rgba(0, 0, 0, 0.3));
     --color-darknes-gray: #666666;
     --color-red: rgb(255, 0, 0);
+    --color-white2: #ffff;
 }
 
 .modo-escuro {
@@ -18,6 +19,7 @@
             rgba(0, 0, 0, 0.3));
     --color-darknes-gray: #666666;
     --color-red: rgb(255, 0, 0);
+    --color-white2: #ffff;
 
     .hero {
         font-size: 10rem;
@@ -46,6 +48,34 @@
 
     .bg-image {
         background-image: url(../img/landing1.jpg);
+    }
+
+    .hero {
+        font-size: 10rem;
+        color: var(--color-red);
+    }
+
+    .hero p {
+        font-size: 3rem;
+        color: var(--bg-black);
+    }
+}
+
+.modo-azul {
+    --bg-black: #3b556e;
+    --color-gray: #0f3764;
+    --color-white: #ffffff;
+    --bg-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    --color-darknes-gray: #ecf0f3;
+    --color-red: #0704d3d0;
+    --color-white2: #3b556e;
+
+    .header-page h1 {
+        color: var(--color-darknes-gray);
+    }
+
+    .bg-image {
+        background-image: url(../img/landing3.webp);
     }
 
     .hero {
@@ -99,7 +129,21 @@ a:hover {
     color: var(--color-red);
 }
 
-#trocar-tema {
+#temas {
+    display: flex;
+    flex-direction: row;
+    gap: 1.7rem;
+}
+
+#temas button.ativo svg {
+    display: none;
+}
+
+#temas button svg {
+    display: inline-block;
+}
+
+#tema-claro {
     height: 50px;
     width: 50px;
     padding: 0;
@@ -108,22 +152,43 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
 }
 
-#trocar-tema svg {
-    fill: var(--color-red);
+#tema-claro svg {
+    fill: rgb(196, 193, 193);
 }
 
-#trocar-tema svg:last-child {
-    display: none;
+#tema-escuro {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--bg-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
-.modo-claro #trocar-tema svg:first-child {
-    display: none;
+#tema-escuro svg {
+    fill: black;
 }
 
-.modo-claro #trocar-tema svg:last-child {
-    display: block;
+#tema-azul {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--bg-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+#tema-azul svg {
+    fill: rgba(14, 79, 219, 0.945);
 }
 
 .secao1 {
@@ -139,17 +204,17 @@ a:hover {
 }
 
 .header-page {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 3rem;
-  color: var(--color-white);
-  font-size: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    color: var(--color-white);
+    font-size: 2.5rem;
 }
 
 .header-menu ul {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 
@@ -196,6 +261,7 @@ a:hover {
 }
 
 .question {
+    color: var(--color-white2);
     font-size: 3rem;
     text-align: center;
 }
