@@ -137,8 +137,9 @@ a:hover {
 #temas button.ativo svg {
   display: none;
 }
-#temas button svg {
+#temas button {
     display: inline-block;
+    cursor: pointer;
 }
 
 
@@ -339,7 +340,6 @@ a:hover {
     margin: 0 1em 1em 0 !important;
   }
 }
-
 
 .hero {
   min-height: calc(100vh - 10rem);
@@ -619,7 +619,6 @@ footer {
   justify-content: center;
   padding: 2rem;
   background: var(--color-gray);
-  color: var(--color-white);
 }
 
 footer h4 {
