@@ -126,9 +126,11 @@ a:hover {
 #temas button.ativo svg {
     display: none; 
 }
-#temas button svg {
+#temas button {
     display: inline-block;
+    cursor: pointer;
 }
+
 
 #tema-claro {
     height: 50px;
@@ -214,10 +216,61 @@ height: 50px;
   font-size: 3rem;
 }
 
-.header-menu ul {
-  display: flex;
-  gap: 1rem;
+.header-menu  {
+max-width: 1280px;
+height: 70px;
+margin-inline: auto;
+
+  & ul{
+    display: flex;
+    gap: 1rem;
+  }
 }
+
+.header-menu a { 
+  padding-block: 16px;
+}
+
+.hamburguer {
+  /* display: none; */
+  border: none;
+  background: none;
+  border-top: 3px #ffffff;
+  cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+  content: " ";
+  display: flex;
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+  margin-top: 3px;
+}
+
+/* @media (max-width: 750px){
+  .hamburguer {
+    display: block;
+  }
+
+  .header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #2196f3;
+    clip-path: circle(100px);
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+  } */
+
+
+
 
 .hero {
   min-height: calc(100vh - 10rem);
@@ -485,7 +538,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: var(--bg-black);
+  background: var(--bg-gradient);
   color: var(--color-white);
 }
 
